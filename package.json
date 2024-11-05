@@ -11,12 +11,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/burinmatheus/cordova-bluebird-api.git"
+    "url": "git+https://github.com/BlueFletch/cordova-bluebird-api.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/burinmatheus/cordova-bluebird-api/issues"
+    "url": "https://github.com/BlueFletch/cordova-bluebird-api/issues"
   },
-  "homepage": "https://github.com/burinmatheus/cordova-bluebird-api#readme"
+  "homepage": "https://github.com/BlueFletch/cordova-bluebird-api#readme"
 }
