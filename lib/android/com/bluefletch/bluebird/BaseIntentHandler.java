@@ -91,12 +91,12 @@ public abstract class BaseIntentHandler {
 
             resultCallbackMap.put(OPEN_REQUEST_ID, openResult);
 
-            applicationContext.registerReceiver(dataReceiver, new IntentFilter(getCallbackDataReceivedIntent()));
+            applicationContext.registerReceiver(dataReceiver, new IntentFilter(getCallbackDataReceivedIntent()), Context.RECEIVER_NOT_EXPORTED);
 
             IntentFilter requestFilter = new IntentFilter();
             requestFilter.addAction(getCallbackSuccessIntent());
             requestFilter.addAction(getCallbackFailedIntent());
-            applicationContext.registerReceiver(resultReceiver, requestFilter);
+            applicationContext.registerReceiver(resultReceiver, requestFilter, Context.RECEIVER_NOT_EXPORTED);
 
             Intent openIntent = new Intent(getOpenIntent());
             openIntent.putExtra(EXTRA_SEQUENCE_ID, OPEN_REQUEST_ID);
